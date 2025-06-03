@@ -5,7 +5,7 @@
     <meta property="og:title" content="Страницы на заказ, HTML/CSS" />
     <meta property="og:description" content="Быстро. Недорого. Честно." />
     <meta property="og:type" content="website" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>peregrenatio</title>
@@ -214,9 +214,22 @@
         }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
+      header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header nav a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
 
     header p {
         font-size: 0.9rem;
